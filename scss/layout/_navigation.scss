@@ -1,0 +1,37 @@
+//navigation
+
+nav ul{
+	display: flex;
+	justify-content:flex-end;
+	font: 6px;
+	margin-top: 0;
+}
+
+nav li{
+	padding: 0 .5rem 0 0;
+	display: flex;
+	justify-content:flex-end;
+	color: $copy-color;
+	font: 10px;
+	text-decoration: none;
+	margin-top: 8px;
+	a{
+		display: flex;
+		color: $copy-color;
+		font-size: 10px;
+		text-decoration: none;
+		margin-top: 8px;
+		}
+}
+
+
+nav a:hover{
+	color: $secondary-color;
+}
+
+header::after{
+	content: " ";
+	display: block;
+	clear: both;
+}
+

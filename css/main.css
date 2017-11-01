@@ -1,0 +1,169 @@
+#results, #results ul, #loadMoreMusic {
+  margin-right: auto;
+  margin-left: auto; }
+
+html {
+  background-color: white;
+  font-family: helvetica, Arial, san-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #CCCCCC;
+  height: 100%; }
+
+body {
+  background-image: url("../images/austin-neill-213462.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 20%;
+  height: auto; }
+
+header {
+  width: 80%;
+  margin: 0 auto; }
+
+search {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+#results {
+  width: 50%;
+  max-width: 1100px; }
+
+li h3 {
+  width: 100%;
+  position: static;
+  color: #16A085;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 0; }
+
+#headlineResults {
+  background-color: #222222;
+  color: white;
+  width: 22rem;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 20px;
+  padding-left: 0;
+  height: 3rem; }
+
+h2 {
+  background-color: #222222;
+  width: 15rem;
+  margin-bottom: 0;
+  margin-top: 20px;
+  margin-left: 28rem;
+  padding-left: 0;
+  height: 2rem;
+  font-size: 12px; }
+
+h1 a {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: url("../images/turntable.png");
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  margin-top: 3px; }
+
+#searchField {
+  height: 40px;
+  width: 40rem;
+  background-color: #C0C0C0;
+  margin-top: 0;
+  margin-left: 28rem;
+  font-size: 25px;
+  margin-bottom: 70px; }
+
+#submitSearch {
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  border: none;
+  margin-left: -28px; }
+
+#results ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0; }
+
+li img {
+  width: auto;
+  height: auto; }
+
+#results li {
+  background-color: #222222;
+  width: 175px;
+  height: 280px;
+  display: flex;
+  margin-right: 1rem;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 1rem; }
+
+#results li p {
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  padding-top: 0;
+  margin-top: 2px; }
+
+#results ul:nth-of-type(3n+1),
+#results > p:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+#loadMoreMusic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: .5em 1em;
+  background-color: #16A085;
+  width: 120px;
+  height: 17px;
+  color: #222222; }
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  font: 6px;
+  margin-top: 0; }
+
+nav li {
+  padding: 0 .5rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+  color: #CCCCCC;
+  font: 10px;
+  text-decoration: none;
+  margin-top: 8px; }
+  nav li a {
+    display: flex;
+    color: #CCCCCC;
+    font-size: 10px;
+    text-decoration: none;
+    margin-top: 8px; }
+
+nav a:hover {
+  color: #16A085; }
+
+header::after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+footer {
+  text-align: center;
+  background-color: #222222;
+  width: auto; }

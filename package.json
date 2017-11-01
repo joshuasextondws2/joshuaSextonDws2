@@ -1,0 +1,23 @@
+{
+  "name": "gulp-demo",
+  "version": "1.0.0",
+  "description": "Hello, this is an api based search of spotify. Search for your favorite artists by name!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuasextondws2/SextonJoshua_dws2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuasextondws2/SextonJoshua_dws2/issues"
+  },
+  "homepage": "https://github.com/joshuasextondws2/SextonJoshua_dws2#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
