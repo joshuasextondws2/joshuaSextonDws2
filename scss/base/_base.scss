@@ -13,6 +13,9 @@ body{
 	@include mq(small){
 		background-size: 100% 20%;
 	}
+	@include mq(medium){
+		background-size: 100% 18%;
+	}
 	background-image: url("../images/austin-neill-213462.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 20%;
@@ -29,10 +32,12 @@ search{
 	width: 90%;
 	
 	}
+	
 	width: 80%;
 	max-width: 1100px;
 	margin: 0 auto;
-}
+	}
+
 
 
 #results{
@@ -40,23 +45,32 @@ search{
 		width: 100%;
 	
 	}
-	width: 50%;
-	max-width: 1100px;
-	@extend %center-element;
+	
+		width: 50%;
+		max-width: 1100px;
+		margin-right: auto;
+		margin-left: auto;
 }
+
 
 li h3{
 	@include mq(small){
-	width: 60%;
-	font-size: 10px;
-	height: 20px;
+		width: 60%;
+		font-size: 10px;
+		height: 20px;
 }
-	width: 100%;
-	color: $secondary-color;
-	font-size: 12px;
-	text-align: center;
-	margin-bottom: 0;
-}
+	@include mq(medium){
+		font-size: 13px;
+		height: 25px;
+		width: 70%;
+	}
+		width: 100%;
+		color: $secondary-color;
+		font-size: 12px;
+		text-align: center;
+		margin-bottom: 0;
+		}
+
 
 #headlineResults{
 	@include mq(small){
@@ -69,15 +83,29 @@ li h3{
 		margin-top: 2px;
 		
 	}
-	background-color: $primary-color;
-	color: $neutral-color;
-	width: 22rem;
-	margin-top: 30px;
-	margin-left: 30px;
-	font-size: 20px;
-	padding-left: 0;
-	height: 3rem;
+	@include mq(medium){
+		width: 33rem;
+		font-size: 25px;
+		margin-top: 20px;
+		}
+	@include mq(large){
+		width: 25rem;
+		font-size: 20px;
+		height: 3rem;
+			
+		
+		}
+	
+		background-color: $primary-color;
+		color: $neutral-color;
+		width: 22rem;
+		margin-top: 30px;
+		margin-left: 30px;
+		font-size: 20px;
+		padding-left: 0;
+		height: 3rem;
 }
+
 
 h2{
 	@include mq(small){
@@ -86,15 +114,27 @@ h2{
 		margin-top: 80px;
 		text-align: center;
 	}
-	background-color: $primary-color;
-	width: 15rem;
-	margin-bottom: 0;
-	margin-top: 20px;
-	margin-left: 28rem;
-	padding-left: 0;
-	height: 2rem;
-	font-size: 12px;
+	@include mq(medium){
+		margin-left: 2rem;
+		text-align: left;
+		font-size: 14px;
+		width: 230px;
+	}
+	@include mq(large){
+		margin-left: 12rem;
+		width: 200px;
+	}
+
+		background-color: $primary-color;
+		width: 15rem;
+		margin-bottom: 0;
+		margin-top: 20px;
+		margin-left: 28rem;
+		padding-left: 0;
+		height: 2rem;
+		font-size: 12px;
 }
+
 
 h1 a{
 	float: left;
@@ -112,19 +152,27 @@ form{
 
 #searchField{
 	@include mq(small){
-	margin-left: 1rem;
-	width: 23rem;
+		margin-left: 1rem;
+		width: 23rem;
+	}
+	@include mq(medium){
+		width: 30rem;
+		margin-left: 2rem;
+	}
+	@include mq(large){
+		width: 40rem;
+		margin-left: 12rem;
 	
-	}	
-	height: 40px;
-	width: 40rem;
-	background-color: #C0C0C0 ;
-	margin-top: 0; 
-	margin-left: 28rem;
-	font-size: 25px;
-	margin-bottom: 70px;
-}
+	}
+		height: 40px;
+		width: 40rem;
+		background-color: #C0C0C0 ;
+		margin-top: 0; 
+		margin-left: 28rem;
+		font-size: 25px;
+		margin-bottom: 70px;
 
+}
 
 #submitSearch{
 	background-image: url("../images/search.png");
@@ -142,19 +190,27 @@ form{
 		flex-direction: column;
 	
 	}
-	@extend %center-element;
+
+	margin-right: auto;
+	margin-left: auto;
 	display: flex;
 	flex-wrap: wrap;
 	padding-left: 0;
+
 }
 
 li img {
 	@include mq(small){
 		height: 85px;
 	}
+	@include mq(medium){
+		height: 95px;
+	}
+	
 	width: auto;
 	height:auto;
 }
+
 
 
 #results {
@@ -162,7 +218,12 @@ li img {
 	@include mq(small){
 		height: 85px;
 		width: 98%;
-		font-size: 6px;
+		flex-direction: column;
+		margin-right: auto;
+		margin-left: auto;
+		}
+	@include mq(medium){
+		height: 95px;
 	}
 		background-color: $primary-color;
 		width: 175px;
@@ -176,17 +237,26 @@ li img {
 		font-size: 10px;
 		margin-bottom: 1rem;
 		}
+		
  	li p{
  		@include mq(small){
- 			font-size: 8px;
- 			width: 40%;
- 		}
- 		text-align: center;
-		font-size: 16px;
-		width: 100%;
-		padding-top: 0;
-		margin-top: 2px;
+ 			font-size: 10px;
+ 			width: 60%;
+ 			margin-top: 30px;
 		}
+		@include mq(medium){
+			margin-top: 25px;
+			font-size: 13px;
+			width: 70%;
+		}
+		
+ 			text-align: center;
+			font-size: 16px;
+			width: 100%;
+			padding-top: 0;
+			margin-top: 2px;
+		}
+		
 }
 
 #results ul:nth-of-type(3n+1),
@@ -198,20 +268,38 @@ li img {
 
 #loadMoreMusic{
 	@include mq(small){
-		width: 23rem;
+		width: 95%;
 		height: 24px;
+		padding-left: 3px; 
+		font-size: 14px;
 }
-	@extend %center-element;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	font-size: 12px;
-	@include brs(3px,3px,3px,3px);
-	padding: .5em 1em;
-	background-color: $secondary-color;
-	width: 120px;
-	height: 17px;
-	color: $primary-color;
+	@include mq(medium){
+		font-size: 16px;
+		padding-left: 6px;
+	}
+	
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		font-size: 12px;
+		@include brs(3px,3px,3px,3px);
+		padding: .5em 1em;
+		background-color: $secondary-color;
+		width: 120px;
+		height: 17px;
+		color: $primary-color;
+}
+
+
+#loadMoreMusic a{
+	width: 200px;
+	
+	@include mq(medium){
+	width: 250px;
+	
+	}
 }
 
 
