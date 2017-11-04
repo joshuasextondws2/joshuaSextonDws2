@@ -16,6 +16,9 @@ body{
 	@include mq(medium){
 		background-size: 100% 18%;
 	}
+	@include mq(large){
+		background-size: 100% 20%;
+	}
 	background-image: url("../images/austin-neill-213462.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 20%;
@@ -45,7 +48,12 @@ search{
 		width: 100%;
 	
 	}
-	
+	@include mq(large){
+		width: 80%;
+		}
+	@media(min-width: 894px){
+		width: 70%;
+	}
 		width: 50%;
 		max-width: 1100px;
 		margin-right: auto;
@@ -63,6 +71,10 @@ li h3{
 		font-size: 13px;
 		height: 25px;
 		width: 70%;
+	}
+	@include mq(large){
+		width: 100%;
+		font-size: 12px;
 	}
 		width: 100%;
 		color: $secondary-color;
@@ -92,6 +104,7 @@ li h3{
 		width: 25rem;
 		font-size: 20px;
 		height: 3rem;
+		margin-left: 20px;
 			
 		
 		}
@@ -123,6 +136,9 @@ h2{
 	@include mq(large){
 		margin-left: 12rem;
 		width: 200px;
+	}
+	@media(min-width: 894px){
+		margin-left: 18rem; 
 	}
 
 		background-color: $primary-color;
@@ -164,6 +180,9 @@ form{
 		margin-left: 12rem;
 	
 	}
+		@media(min-width: 894px){
+			margin-left: 18rem;
+		}
 		height: 40px;
 		width: 40rem;
 		background-color: #C0C0C0 ;
@@ -190,7 +209,9 @@ form{
 		flex-direction: column;
 	
 	}
-
+	@include mq(large){
+		flex-direction: row;	
+		}
 	margin-right: auto;
 	margin-left: auto;
 	display: flex;
@@ -206,7 +227,9 @@ li img {
 	@include mq(medium){
 		height: 95px;
 	}
-	
+	@include mq(large){
+		height: auto;
+	}
 	width: auto;
 	height:auto;
 }
@@ -225,6 +248,11 @@ li img {
 	@include mq(medium){
 		height: 95px;
 	}
+		@include mq(large){
+		width: 175px;
+		height: 280px;
+		flex-direction: row;
+		}
 		background-color: $primary-color;
 		width: 175px;
 		height: 280px;
@@ -249,7 +277,12 @@ li img {
 			font-size: 13px;
 			width: 70%;
 		}
-		
+		@include mq(large){
+			width: 100%;
+			margin-top: 29px;
+			font-size: 16px;
+			
+			}
  			text-align: center;
 			font-size: 16px;
 			width: 100%;
@@ -276,6 +309,13 @@ li img {
 	@include mq(medium){
 		font-size: 16px;
 		padding-left: 6px;
+	}
+	@include mq(large){
+		width: 120px;
+		height: 17px;
+		font-size: 12px;
+		padding: .5em 1em;
+	
 	}
 	
 		margin-right: auto;

@@ -17,6 +17,9 @@ body {
   @media (min-width: 400px) {
     body {
       background-size: 100% 18%; } }
+  @media (min-width: 700px) {
+    body {
+      background-size: 100% 20%; } }
 
 header {
   width: 80%;
@@ -38,6 +41,12 @@ search {
   @media (min-width: 300px) {
     #results {
       width: 100%; } }
+  @media (min-width: 700px) {
+    #results {
+      width: 80%; } }
+  @media (min-width: 894px) {
+    #results {
+      width: 70%; } }
 
 li h3 {
   width: 100%;
@@ -55,6 +64,10 @@ li h3 {
       font-size: 13px;
       height: 25px;
       width: 70%; } }
+  @media (min-width: 700px) {
+    li h3 {
+      width: 100%;
+      font-size: 12px; } }
 
 #headlineResults {
   background-color: #222222;
@@ -83,7 +96,8 @@ li h3 {
     #headlineResults {
       width: 25rem;
       font-size: 20px;
-      height: 3rem; } }
+      height: 3rem;
+      margin-left: 20px; } }
 
 h2 {
   background-color: #222222;
@@ -110,6 +124,9 @@ h2 {
     h2 {
       margin-left: 12rem;
       width: 200px; } }
+  @media (min-width: 894px) {
+    h2 {
+      margin-left: 18rem; } }
 
 h1 a {
   float: left;
@@ -143,6 +160,9 @@ form {
     #searchField {
       width: 40rem;
       margin-left: 12rem; } }
+  @media (min-width: 894px) {
+    #searchField {
+      margin-left: 18rem; } }
 
 #submitSearch {
   background-image: url("../images/search.png");
@@ -162,6 +182,9 @@ form {
   @media (min-width: 300px) {
     #results ul {
       flex-direction: column; } }
+  @media (min-width: 700px) {
+    #results ul {
+      flex-direction: row; } }
 
 li img {
   width: auto;
@@ -172,6 +195,9 @@ li img {
   @media (min-width: 400px) {
     li img {
       height: 95px; } }
+  @media (min-width: 700px) {
+    li img {
+      height: auto; } }
 
 #results li {
   background-color: #222222;
@@ -195,6 +221,11 @@ li img {
   @media (min-width: 400px) {
     #results li {
       height: 95px; } }
+  @media (min-width: 700px) {
+    #results li {
+      width: 175px;
+      height: 280px;
+      flex-direction: row; } }
 
 #results li p {
   text-align: center;
@@ -212,6 +243,11 @@ li img {
       margin-top: 25px;
       font-size: 13px;
       width: 70%; } }
+  @media (min-width: 700px) {
+    #results li p {
+      width: 100%;
+      margin-top: 29px;
+      font-size: 16px; } }
 
 #results ul:nth-of-type(3n+1),
 #results > p:last-child {
@@ -245,6 +281,12 @@ li img {
     #loadMoreMusic {
       font-size: 16px;
       padding-left: 6px; } }
+  @media (min-width: 700px) {
+    #loadMoreMusic {
+      width: 120px;
+      height: 17px;
+      font-size: 12px;
+      padding: .5em 1em; } }
 
 #loadMoreMusic a {
   width: 200px; }
