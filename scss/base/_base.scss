@@ -54,6 +54,15 @@ search{
 	@media(min-width: 894px){
 		width: 70%;
 	}
+	@media(min-width: 1016px){
+		width: 60%;
+		}	
+	@media(min-width: 1084px){
+		width: 50%;
+		}
+	@media(min-width: 1370px){
+		width: 60%;
+		}			
 		width: 50%;
 		max-width: 1100px;
 		margin-right: auto;
@@ -72,9 +81,16 @@ li h3{
 		height: 25px;
 		width: 70%;
 	}
+	@media(min-width: 543px){
+		font-size: 18px;
+		width: 70%;
+	}
 	@include mq(large){
 		width: 100%;
 		font-size: 12px;
+	}
+	@media(min-width: 1370px){
+		font-size: 14px;
 	}
 		width: 100%;
 		color: $secondary-color;
@@ -100,14 +116,20 @@ li h3{
 		font-size: 25px;
 		margin-top: 20px;
 		}
+	@media(min-width: 543px){
+		width: 98%;
+		text-align: center;
+	}
 	@include mq(large){
 		width: 25rem;
 		font-size: 20px;
 		height: 3rem;
 		margin-left: 20px;
-			
-		
 		}
+	@media(min-width: 1370px){
+		font-size: 25px;
+		width: 30rem;
+	}	
 	
 		background-color: $primary-color;
 		color: $neutral-color;
@@ -128,19 +150,31 @@ h2{
 		text-align: center;
 	}
 	@include mq(medium){
-		margin-left: 2rem;
+		margin-left: 24px;
 		text-align: left;
 		font-size: 14px;
 		width: 230px;
 	}
+	@media(min-width: 543px){
+		margin-left: 100px;
+		
+	
+	}
 	@include mq(large){
-		margin-left: 12rem;
+		margin-left: 144px;
 		width: 200px;
 	}
 	@media(min-width: 894px){
-		margin-left: 18rem; 
+		margin-left: 216px; 
 	}
-
+	@media(min-width: 1014px){
+		margin-left: 20rem;
+		}	
+	@media(min-width: 1370px){
+		margin-left: 31rem;
+		font-size: 20px;
+		width: 320px;
+	}	
 		background-color: $primary-color;
 		width: 15rem;
 		margin-bottom: 0;
@@ -175,14 +209,25 @@ form{
 		width: 30rem;
 		margin-left: 2rem;
 	}
+	@media(min-width: 543px){
+		margin-left: 100px;
+	}
 	@include mq(large){
 		width: 40rem;
 		margin-left: 12rem;
 	
 	}
-		@media(min-width: 894px){
-			margin-left: 18rem;
+	@media(min-width: 894px){
+		margin-left: 18rem;
 		}
+		@media(min-width: 1014px){
+		margin-left: 20rem;
+		}	
+	@media(min-width: 1370px){
+		margin-left: 31rem;
+		width: 50rem;
+		height: 50px;
+	}	
 		height: 40px;
 		width: 40rem;
 		background-color: #C0C0C0 ;
@@ -201,6 +246,8 @@ form{
 	background-size: 20px 20px;
 	border: none;
 	margin-left: -28px;
+	
+	
 }
 
 
@@ -230,6 +277,10 @@ li img {
 	@include mq(large){
 		height: auto;
 	}
+	@media(min-width: 1370px){
+		width: 220px;
+		height: auto;
+	}
 	width: auto;
 	height:auto;
 }
@@ -248,10 +299,18 @@ li img {
 	@include mq(medium){
 		height: 95px;
 	}
-		@include mq(large){
+	@media(min-width: 543px){
+		width: 100%;
+	}
+	@include mq(large){
 		width: 175px;
 		height: 280px;
 		flex-direction: row;
+		}
+	@media(min-width: 1370px){
+		width: 220px;
+		height: 300px;
+		
 		}
 		background-color: $primary-color;
 		width: 175px;
@@ -277,12 +336,19 @@ li img {
 			font-size: 13px;
 			width: 70%;
 		}
+		@media(min-width: 543px){
+			width: 70%;
+			margin-top: 20px;
+		}
 		@include mq(large){
 			width: 100%;
 			margin-top: 29px;
 			font-size: 16px;
-			
-			}
+		}
+		@media(min-width: 1370px){
+			margin-top: 53px;
+		
+		}
  			text-align: center;
 			font-size: 16px;
 			width: 100%;
@@ -305,16 +371,25 @@ li img {
 		height: 24px;
 		padding-left: 3px; 
 		font-size: 14px;
-}
+    }
 	@include mq(medium){
 		font-size: 16px;
 		padding-left: 6px;
 	}
+	@media(min-width: 543px){
+		width: 50%;
+		}
 	@include mq(large){
 		width: 120px;
 		height: 17px;
 		font-size: 12px;
 		padding: .5em 1em;
+	
+	}
+	@media(min-width: 1370px){
+		width: 220px;
+		height: 35px;
+		font-size: 20px;
 	
 	}
 	
@@ -337,8 +412,13 @@ li img {
 	width: 200px;
 	
 	@include mq(medium){
-	width: 250px;
-	
+		width: 250px;
+	}
+	@media(min-width: 543px){
+		width: 195px;
+	}
+	@media(min-width: 1370px){
+		width: 200px;
 	}
 }
 
