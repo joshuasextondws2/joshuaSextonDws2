@@ -11,7 +11,7 @@ html{
 	
 body{
 	@include mq(small){
-		background-size: 100% 20%;
+		background-size: 100% 18%;
 	}
 	@include mq(medium){
 		background-size: 100% 18%;
@@ -21,8 +21,6 @@ body{
 	}
 	background-image: url("../images/austin-neill-213462.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% 20%;
-	height: auto;
 }
 
 header{
@@ -35,38 +33,32 @@ search{
 	width: 90%;
 	
 	}
-	
 	width: 80%;
 	max-width: 1100px;
 	margin: 0 auto;
-	}
-
-
+}
 
 #results{
 	@include mq(small){
 		width: 100%;
-	
 	}
 	@include mq(large){
 		width: 80%;
-		}
+	}
 	@media(min-width: 894px){
 		width: 70%;
 	}
 	@media(min-width: 1016px){
 		width: 60%;
-		}	
+	}	
 	@media(min-width: 1084px){
 		width: 50%;
-		}
+	}
 	@media(min-width: 1370px){
 		width: 60%;
 		}			
-		width: 50%;
-		max-width: 1100px;
-		margin-right: auto;
-		margin-left: auto;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
@@ -82,7 +74,7 @@ li h3{
 		width: 70%;
 	}
 	@media(min-width: 543px){
-		font-size: 18px;
+		font-size: 16px;
 		width: 70%;
 	}
 	@include mq(large){
@@ -92,12 +84,10 @@ li h3{
 	@media(min-width: 1370px){
 		font-size: 14px;
 	}
-		width: 100%;
-		color: $secondary-color;
-		font-size: 12px;
-		text-align: center;
-		margin-bottom: 0;
-		}
+	color: $secondary-color;
+	text-align: center;
+	margin-bottom: 0;
+}
 
 
 #headlineResults{
@@ -109,7 +99,6 @@ li h3{
 		padding-top: 14px;
 		padding-left: 12px;
 		margin-top: 2px;
-		
 	}
 	@include mq(medium){
 		width: 33rem;
@@ -130,15 +119,13 @@ li h3{
 		font-size: 25px;
 		width: 30rem;
 	}	
-	
-		background-color: $primary-color;
-		color: $neutral-color;
-		width: 22rem;
-		margin-top: 30px;
-		margin-left: 30px;
-		font-size: 20px;
-		padding-left: 0;
-		height: 3rem;
+	background-color: $primary-color;
+	color: $neutral-color;
+	margin-top: 30px;
+	margin-left: 30px;
+	font-size: 20px;
+	padding-left: 0;
+	height: 3rem;
 }
 
 
@@ -157,8 +144,6 @@ h2{
 	}
 	@media(min-width: 543px){
 		margin-left: 100px;
-		
-	
 	}
 	@include mq(large){
 		margin-left: 144px;
@@ -175,14 +160,12 @@ h2{
 		font-size: 20px;
 		width: 320px;
 	}	
-		background-color: $primary-color;
-		width: 15rem;
-		margin-bottom: 0;
-		margin-top: 20px;
-		margin-left: 28rem;
-		padding-left: 0;
-		height: 2rem;
-		font-size: 12px;
+	background-color: $primary-color;
+	margin-bottom: 0;
+	margin-top: 20px;
+	padding-left: 0;
+	height: 2rem;
+	font-size: 12px;
 }
 
 
@@ -229,13 +212,10 @@ form{
 		height: 50px;
 	}	
 		height: 40px;
-		width: 40rem;
 		background-color: #C0C0C0 ;
 		margin-top: 0; 
-		margin-left: 28rem;
 		font-size: 25px;
 		margin-bottom: 70px;
-
 }
 
 #submitSearch{
@@ -246,10 +226,7 @@ form{
 	background-size: 20px 20px;
 	border: none;
 	margin-left: -28px;
-	
-	
 }
-
 
 #results ul {
 	@include mq(small){
@@ -258,13 +235,12 @@ form{
 	}
 	@include mq(large){
 		flex-direction: row;	
-		}
+	}
 	margin-right: auto;
 	margin-left: auto;
 	display: flex;
 	flex-wrap: wrap;
 	padding-left: 0;
-
 }
 
 li img {
@@ -289,32 +265,29 @@ li img {
 
 #results {
 	li {
-	@include mq(small){
-		height: 85px;
-		width: 98%;
-		flex-direction: column;
-		margin-right: auto;
-		margin-left: auto;
+		@include mq(small){
+			height: 85px;
+			width: 98%;
+			flex-direction: column;
+			margin-right: auto;
+			margin-left: auto;
 		}
-	@include mq(medium){
-		height: 95px;
-	}
-	@media(min-width: 543px){
-		width: 100%;
-	}
-	@include mq(large){
-		width: 175px;
-		height: 280px;
-		flex-direction: row;
+		@include mq(medium){
+			height: 95px;
 		}
-	@media(min-width: 1370px){
-		width: 220px;
-		height: 300px;
-		
+		@media(min-width: 543px){
+			width: 100%;
+		}
+		@include mq(large){
+			width: 175px;
+			height: 280px;
+			flex-direction: row;
+		}
+		@media(min-width: 1370px){
+			width: 220px;
+			height: 300px;
 		}
 		background-color: $primary-color;
-		width: 175px;
-		height: 280px;
 		display: flex;
 		margin-right: 1rem;
 		justify-content: flex-start;
@@ -323,7 +296,7 @@ li img {
         text-align: center;
 		font-size: 10px;
 		margin-bottom: 1rem;
-		}
+	}
 		
  	li p{
  		@include mq(small){
@@ -349,11 +322,9 @@ li img {
 			margin-top: 53px;
 		
 		}
- 			text-align: center;
-			font-size: 16px;
-			width: 100%;
-			padding-top: 0;
-			margin-top: 2px;
+ 		text-align: center;
+		padding-top: 0;
+		margin-top: 2px;
 		}
 		
 }
@@ -392,21 +363,16 @@ li img {
 		font-size: 20px;
 	
 	}
-	
-		margin-right: auto;
-		margin-left: auto;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		font-size: 12px;
-		@include brs(3px,3px,3px,3px);
-		padding: .5em 1em;
-		background-color: $secondary-color;
-		width: 120px;
-		height: 17px;
-		color: $primary-color;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	@include brs(3px,3px,3px,3px);
+	padding: .5em 1em;
+	background-color: $secondary-color;
+	color: $primary-color;
 }
-
 
 #loadMoreMusic a{
 	width: 200px;
