@@ -179,7 +179,7 @@ form {
   @media (min-width: 400px) {
     #searchField {
       width: 30rem;
-      margin-left: 2rem; } }
+      margin-left: 1rem; } }
   @media (min-width: 543px) {
     #searchField {
       margin-left: 100px; } }
